@@ -18,7 +18,7 @@ const Main = () => {
             inputValue.charAt(i)==="I"||
             inputValue.charAt(i)==="O"||
             inputValue.charAt(i)==="U")
-            value++
+            value=value+1;
         }
         setVowels(value);
     }
