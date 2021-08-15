@@ -6,11 +6,11 @@ const Main = () => {
     const [vowels,setVowels] = useState(0);
     const handleChange = (e) => {
         setInput(e.target.value);
-        submit();
+        submit(e.target.value);
         }
 
-    const submit = () => {
-        let inputValue =input.toUpperCase();
+    const submit = (inputI) => {
+        let inputValue =inputI.toUpperCase();
         let value=0;
         for(var i=0;i<inputValue.length;i++) {
             if(inputValue.charAt(i)==="A"||
